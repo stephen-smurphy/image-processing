@@ -25,7 +25,7 @@ def sobel(image):
             gy = gradientY[0][2] + gradientY[1][2] + gradientY[2][2] - gradientY[0][0] + gradientY[1][0] + gradientY[2][0]
 
             total = abs(gx + gy)
-            if total > 900:
+            if total > 700:
                 sobel[i][j] = total
             else:
                 sobel[i][j] = 0
